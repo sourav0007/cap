@@ -1,6 +1,7 @@
 # Getting Started
 
 Welcome to the new project.
+Sonali first changes 
 
 It contains these folders and files, following our recommended project layout:
 

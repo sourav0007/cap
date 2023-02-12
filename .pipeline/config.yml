@@ -23,17 +23,14 @@ stages:
     cfSpace: "dev"
     cfAppName: "cap04"
     cfCredentialsId: "deploy-to-cf"
-    tmsUpload: true
+    tmsUpload: false
 steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
-
   npmExecuteLint:
     failOnError: true
-
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
-    
   tmsUpload:
     nodeName: "qa"
     credentialsId: "tms-sk"
